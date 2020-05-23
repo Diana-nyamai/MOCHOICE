@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes slideleft{
+	from{
+		background-position:o%;
+	}
+	to{
+		background-position:90000%;
+	}
+}
+header{
+ background-image: url("mochoicebg.jpg");
+ background-repeat:repeat-x;
+ animation:slideleft 5000s infinite linear;
+ background-attachment:fixed;
+ position: relative;
+ min-height:100vh;
+ background-size: cover;
+ background-position: center;
+}
+
+h1{
+    text-align: center;
+    display: inline-block;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 50px;
+    display: block;
+    overflow: hidden;
+    background-color: #111;
+    position: sticky;
+    
+}
+ li{
+    display:inline-block;
+    paddding:20px;
+    
+}
+ li a{
+text-decoration: none;
+color: #ffffff;
+text-align: center;
+padding: 8px;
+
+}
+li a:hover{
+    background-color:#000;
+    color:#fff;
+}
+li a.active{
+    background-color:#000;
+}
+li a, .dropbtn{
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li .dropdown:hover .dropbtn{
+    background-color: #000;
+}
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content {
+        display:none;
+        position:absolute;
+        background-color:#f9f9f9;
+        min-width: 146px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+    }
+    .dropdown-content a{
+        color: #fff;
+        background-color:#111;
+        padding:6px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+    }
+    .dropdown-content a:hover{background-color:ffffff;}
+
+    .dropdown:hover .dropdown-content{
+        display:block;
+        z-index: 2;
+    }
